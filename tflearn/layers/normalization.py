@@ -86,11 +86,7 @@ def batch_normalization(incoming, beta=0.0, gamma=1.0, epsilon=1e-5,
                                   restore=restore)
         moving_variance = vs.variable('moving_variance',
                                       input_shape[-1:],
-<<<<<<< HEAD
                                       initializer=tf.ones_initializer(),
-=======
-                                      initializer=tf.constant_initializer(1.),
->>>>>>> tflearn/master
                                       trainable=False,
                                       restore=restore)
 

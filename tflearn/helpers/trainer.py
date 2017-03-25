@@ -80,11 +80,8 @@ class Trainer(object):
                  balanced_classes = False):
 
         self.graph = tf.get_default_graph()
-<<<<<<< HEAD
         self.balanced_classes = balanced_classes
-=======
         self.summ_writer = None
->>>>>>> tflearn/master
         if graph:
             self.graph = graph
 
